@@ -16,8 +16,15 @@
     "shadowdom",
     "css"
   ],
-  "author": "",
+  "author": "UpperCod",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atomicojs/inject-style/issues"
+  },
+  "homepage": "https://github.com/atomicojs/inject-style#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@esm-bundle/chai": "^4.3.4",
     "@web/test-runner": "^0.13.3",
