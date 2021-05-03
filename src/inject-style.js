@@ -69,4 +69,4 @@ export const getMediaList = (current) => {
   return [];
 };
 
-customElements.define("inherit-style", InheritStyle);
+customElements.define("inject-style", InheritStyle);

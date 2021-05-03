@@ -31,6 +31,53 @@ This webcomponent is an alternative to `::part` and allows to inject CSS outside
 
 the css inside the at-rule `@media my-example` will exist inside my-example only if they share the tagName or a custom namespace.
 
+## Install
+
+```bash
+npm i @atomico/inject-style
+```
+
+## Usage
+
+### [Atomico](https://atomicojs.github.io/)
+
+```jsx
+import { c } from "atomico";
+import "@atomico/inject-style";
+
+function component() {
+  return (
+    <host shadowDom>
+      <inject-style></inject-style>
+      ...DOM
+    </host>
+  );
+}
+
+customElements.define("my-component", c(component));
+```
+
+Remember in Atomico you can also use Constructors to instantiate the webcomponent, example `<InheritStyle/>`.
+
+### Vinilla JS
+
+```js
+import "@atomico/inject-style";
+
+class Component extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
+  connectedCallback() {
+    this.shadowRoot.innerHTML = `
+      <inject-style></inject-style>
+      ...DOM
+    `;
+  }
+}
+```
+
 ## Properties
 
 | Property  | Type   | Description                                                  |
