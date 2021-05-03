@@ -1,0 +1,26 @@
+{
+  "name": "@atomico/inject-style",
+  "version": "1.0.0",
+  "description": "Improves the extensibility of the CSS of your webcomponents",
+  "module": "./src/inject-style.js",
+  "exports": {
+    ".": "./src/inject-style.js"
+  },
+  "scripts": {
+    "types": "tsc",
+    "test": "wtr tests/**/*.test.js --node-resolve",
+    "prepack": "npm run test && npm run types"
+  },
+  "keywords": [
+    "webcomponents",
+    "shadowdom",
+    "css"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@esm-bundle/chai": "^4.3.4",
+    "@web/test-runner": "^0.13.3",
+    "typescript": "^4.2.4"
+  }
+}
