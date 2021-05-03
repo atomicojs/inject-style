@@ -1,6 +1,6 @@
 {
   "name": "@atomico/inject-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Improves the extensibility of the CSS of your webcomponents",
   "module": "./src/inject-style.js",
   "exports": {
